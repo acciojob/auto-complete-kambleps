@@ -6,7 +6,7 @@ const App = () => {
   const fruits = ["apple", "banana", "cherry", "date", "elderberry", "fig"]
   
   const [searchTerm, setSearchTerm] = useState('');
-  const [suggestions, setSuggestions] = useState([]);
+  const [suggestions, setSuggestions] = useState(fruits);
 
   const handleInputChange = (event) => {
     const newSearchTerm = event.target.value;
